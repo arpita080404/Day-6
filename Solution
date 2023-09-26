@@ -1,0 +1,22 @@
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double X, Y; // Cost of renting and cost of buying
+    int M;      // Maximum number of months Chef can rent
+
+    // Input the values of X and Y
+    printf("Enter the cost of renting (X): ");
+    scanf("%lf", &X);
+    printf("Enter the cost of buying (Y): ");
+    scanf("%lf", &Y);
+
+    // Calculate the maximum number of months
+    M = floor(Y / X);
+
+    // Output the result
+    printf("Chef can rent the cooler for a maximum of %d months.\n", M);
+
+    return 0;
+}
